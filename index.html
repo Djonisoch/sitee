@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;500;600;900&display=swap" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <title>Sladosti</title>
@@ -23,17 +22,15 @@
                     <nav class="header-menu menu">
                         <ul class="menu-list">
                             <li class="menu-item">
-                                <a class="menu-link scrollto" href="#Catalog">Каталог</a>
+                                <a class="menu-link scrollto" href="#catalog">Каталог</a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link scrollto" href="#feedback">Отзывы</a>                
                             </li>
                             <li class="menu-item">
-
-                                <a class="menu-link scrollto" href="#">Контакты</a>
+                                <a class="menu-link scrollto" href="#contacts">Контакты</a>
                             </li>
                             <li class="menu-item">
-
                                 <a class="menu-link scrollto" href="#about">О нас</a> 
                             </li>
                         </ul>    
@@ -41,18 +38,18 @@
                 </div>  
         </header> 
         <main id="main" class="main">
-            <div class="intro__main-block main-block">
+            <div class="main-block">
                 <div class="main-clock__container _container">
                     <div class="main-block__body">
                         <h1 class="main-block__title">Weclome to the shop Sladost</h1>
                         <div class="main-block__text">Магазин кондитерских издейлий</div>
                         <div class="main-block__button">
-                            <a href="#" type="button" class="btn" data-popup="popup-main">Заказать</a>
+                            <a href="#catalog"  class="btn scrollto" >Выбрать</a>
                         </div>
                     </div>
                 </div>
                 <div class="main-block__image _ibg">
-                    <img src="img/cake/intronew.jpg" alt="cover">
+                    <img src="img/cake/backcake2.jpg" alt="cover">
                 </div>
             </div>
 
@@ -60,7 +57,7 @@
                 <div class="about__container _container">
                     <div class="about__item">   
                         <div class="item__text">
-                                <h3 class="item__about-title">О нашей компании</h3>
+                                <h3 class="item__about-title">〜О нашей компании〜</h3>
                                 <p class="item__about-text">В начале 21 века в США стала популярна продажа кексов, которые представляют собой специализированные пекарни, продающие мало или вообще ничего, кроме кексов, играя на ощущении ностальгии, вызванной пирожными. В Нью-Йорке кексовые магазины, такие как пекарня "Магнолия", получили широкую известность в своих выступлениях на таких популярных телевизионных шоу, как "Секс в большом городе".</p>  
                                
                             </div>
@@ -68,7 +65,7 @@
                         </div>
 
                 <div class="about__intro">
-                    <h1 class="about__intro-title">Мы изготавливаем</h1>
+                    <h1 class="about__intro-title">〜Мы изготавливаем〜</h1>
                 </div>
                 <div class="about__body">   
                     <div class="about__column">
@@ -98,9 +95,9 @@
                 <div class="main__stock">   
                     <div class="stock__container _container">
                         <div class="stock__body">
-                                <h1 class="stock-block__title"><em>Только до конца месяца<br>скидка 20% на все капкейки и пончики</em></h1>
+                                <h1 class="stock-block__title">Только до конца месяца<br>скидка 20% на все капкейки и пончики</h1>
                             <div class="stock__body-button">
-                                <button type="button" class="btn" data-popup="popup-main">Заказать</button>
+                                <a href="#catalog"  class="btn scrollto" >Выбрать</a>
                             </div>
                         </div>
                     </div>
@@ -144,9 +141,9 @@
                 </div>
             </section>
                  <!--------------------------------------------------------------------------Catalog------------------------------------------------------->
-            <section id="Catalog" class="section-catalog">        
-                <h2 class="section__title">Каталог</h2>
+            <section id="catalog" class="section-catalog">        
                 <div class="catalog-container _container">
+                    <h2 class="section__title">Каталог</h2>
                         <div class="tabs">    
                             <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
                             <label class="name_catalog" for="tab-btn-1">Торты</label>
@@ -154,101 +151,200 @@
                             <label class="name_catalog" for="tab-btn-2">Капкейки</label>
                             <input type="radio" name="tab-btn" id="tab-btn-3" value="">
                             <label class="name_catalog" for="tab-btn-3">Пончики</label>
-                                <!--------------------------------------------------------------------------Cake------------------------------------------------------->
+                            
+                            <!--------------------------------------------------------------------------Cake------------------------------------------------------->
                             <div id="content-1">
                                 <div class="product">
-                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
                                     <div class="product__content">
-                                        <h3 class="product__title">Торт нежный</h3>
+                                        <h3 class="product__title">Торт нежный1</h3>
                                         <div class="product__description">Очень вкусный тортик вкусный тортик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button  data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
                                     <div class="product__content">
-                                        <h3 class="product__title">Торт нежный</h3>
+                                        <h3 class="product__title">Торт нежный2</h3>
                                         <div class="product__description">Очень вкусный тортик вкусный тортик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button  data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
                                     <div class="product__content">
-                                        <h3 class="product__title">Торт нежный</h3>
+                                        <h3 class="product__title">Торт нежный3</h3>
                                         <div class="product__description">Очень вкусный тортик вкусный тортик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
                                     <div class="product__content">
-                                        <h3 class="product__title">Торт нежный</h3>
+                                        <h3 class="product__title">Торт нежный4</h3>
                                         <div class="product__description">Очень вкусный тортик вкусный тортик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
                                     <div class="product__content">
-                                        <h3 class="product__title">Торт нежный</h3>
+                                        <h3 class="product__title">Торт нежный5</h3>
                                         <div class="product__description">Очень вкусный тортик вкусный тортик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
                                     <div class="product__content">
-                                        <h3 class="product__title">Торт нежный</h3>
+                                        <h3 class="product__title">Торт нежный6</h3>
                                         <div class="product__description">Очень вкусный тортик вкусный тортик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Торт нежный</h3>
                                         <div class="product__description">Очень вкусный тортик вкусный тортик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
+                                            <span class="product__currency">&#8381;</span>
+                                        </div>
+                                        <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
+                                    </footer>
+                                </div>
+                                <div class="product">
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
+                                    <div class="product__content">
+                                        <h3 class="product__title">Торт нежный1</h3>
+                                        <div class="product__description">Очень вкусный тортик вкусный тортик </div>
+                                    </div>
+                                    <footer class="poduct__footer">
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
+                                            <span class="product__currency">&#8381;</span>
+                                        </div>
+                                        <button  data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
+                                    </footer>
+                                </div>
+                                <div class="product">
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
+                                    <div class="product__content">
+                                        <h3 class="product__title">Торт нежный2</h3>
+                                        <div class="product__description">Очень вкусный тортик вкусный тортик </div>
+                                    </div>
+                                    <footer class="poduct__footer">
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
+                                            <span class="product__currency">&#8381;</span>
+                                        </div>
+                                        <button  data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
+                                    </footer>
+                                </div>
+                                <div class="product">
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
+                                    <div class="product__content">
+                                        <h3 class="product__title">Торт нежный3</h3>
+                                        <div class="product__description">Очень вкусный тортик вкусный тортик </div>
+                                    </div>
+                                    <footer class="poduct__footer">
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
+                                            <span class="product__currency">&#8381;</span>
+                                        </div>
+                                        <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
+                                    </footer>
+                                </div>
+                                <div class="product">
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
+                                    <div class="product__content">
+                                        <h3 class="product__title">Торт нежный4</h3>
+                                        <div class="product__description">Очень вкусный тортик вкусный тортик </div>
+                                    </div>
+                                    <footer class="poduct__footer">
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
+                                            <span class="product__currency">&#8381;</span>
+                                        </div>
+                                        <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
+                                    </footer>
+                                </div>
+                                <div class="product">
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
+                                    <div class="product__content">
+                                        <h3 class="product__title">Торт нежный5</h3>
+                                        <div class="product__description">Очень вкусный тортик вкусный тортик </div>
+                                    </div>
+                                    <footer class="poduct__footer">
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
+                                            <span class="product__currency">&#8381;</span>
+                                        </div>
+                                        <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
+                                    </footer>
+                                </div>
+                                <div class="product">
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
+                                    <div class="product__content">
+                                        <h3 class="product__title">Торт нежный6</h3>
+                                        <div class="product__description">Очень вкусный тортик вкусный тортик </div>
+                                    </div>
+                                    <footer class="poduct__footer">
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
+                                            <span class="product__currency">&#8381;</span>
+                                        </div>
+                                        <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
+                                    </footer>
+                                </div>
+                                <div class="product">
+                                    <div class="product__img"><img src="img/cake/cakestatic.jpg" alt="" class="productimg" ></div>
+                                    <div class="product__content">
+                                        <h3 class="product__title">Торт нежный</h3>
+                                        <div cla    ss="product__description">Очень вкусный тортик вкусный тортик </div>
+                                    </div>
+                                    <footer class="poduct__footer">
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
@@ -258,98 +354,98 @@
                             <!--------------------------------------------------------------------------Capcake------------------------------------------------------->
                             <div id="content-2">
                                 <div class="product">
-                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Капкейк с малиной</h3>
                                         <div class="product__description">Очень вкусный капкейк вкусный капкейк </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Капкейк с малиной</h3>
                                         <div class="product__description">Очень вкусный капкейк вкусный капкейк </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Капкейк с малиной</h3>
                                         <div class="product__description">Очень вкусный капкейк вкусный капкейк </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Капкейк с малиной</h3>
                                         <div class="product__description">Очень вкусный капкейк вкусный капкейк </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Капкейк с малиной</h3>
                                         <div class="product__description">Очень вкусный капкейк вкусный капкейк </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Капкейк с малиной</h3>
                                         <div class="product__description">Очень вкусный капкейк вкусный капкейк </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/capcake/capcake.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Капкейк с малиной</h3>
                                         <div class="product__description">Очень вкусный капкейк вкусный капкейк </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
@@ -359,84 +455,84 @@
                                 <!--------------------------------------------------------------------------Donats------------------------------------------------------->
                             <div id="content-3">
                                 <div class="product">
-                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Пончик вкусный</h3>
                                         <div class="product__description">Очень вкусный пончик вкусный пончик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Пончик вкусный</h3>
                                         <div class="product__description">Очень вкусный пончик вкусный пончик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Пончик вкусный</h3>
                                         <div class="product__description">Очень вкусный пончик вкусный пончик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Пончик вкусный</h3>
                                         <div class="product__description">Очень вкусный пончик вкусный пончик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Пончик вкусный</h3>
                                         <div class="product__description">Очень вкусный пончик вкусный пончик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-order" class="btn product__btn" type="button">Заказать</button>
                                     </footer>
                                 </div>
                                 <div class="product">
-                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt=""></div>
+                                    <div class="product__img"><img src="img/donats/donats1.jpg" alt="" class="productimg"></div>
                                     <div class="product__content">
                                         <h3 class="product__title">Пончик вкусный</h3>
                                         <div class="product__description">Очень вкусный пончик вкусный пончик </div>
                                     </div>
                                     <footer class="poduct__footer">
-                                        <div class="product_price">
-                                            <span class="product_price-value">2350</span>
+                                        <div class="product__price">
+                                            <span class="product__price-value">2350</span>
                                             <span class="product__currency">&#8381;</span>
                                         </div>
                                         <button data-popup="popup-thanks" class="btn product__btn" type="button">Заказать</button>
@@ -448,8 +544,8 @@
             </section>
                  <!--------------------------------------------------------------------------Feedback------------------------------------------------------->
             <section id="feedback" class="feedback">
+                <h1 class="feedback__title">Отзывы</h1>
                 <div class="feedback-container _container">
-                    <h1 class="feedback__title">Отзывы</h1>
                     <div class="feedback__content">
                         <div class="feedback__item">
                             <div class="feddback__img"><img src="img/people.jpg" alt=""></div>
@@ -475,43 +571,104 @@
                     </div>
                 </div>
             </section>
-                
+            <section id="contacts" class="section section-contacts">
+                <div class="benefits__container _container">
+                    <div class="benefits__intro">
+                        <h1 class="benefits__intro-title">Контакты</h1>
+                    </div>
+                    <div class="benefits__body">
+                        <div class="benefits__column">
+                            <div class="benefits__item">
+                                <div class="item-benefits__img"><img src="img/icons/contacts1.svg" alt=""></div>
+                                <h3 class="item-benefits__title"><a href="tel:+79501500505">+7(950)-150-05-05</a></h3>
+                            </div>
+                        </div>
+                        <div class="benefits__column">
+                            <div class="benefits__item">
+                                <div class="item-benefits__img"><img src="img/icons/contacts2.svg" alt=""></div>
+                                <h3 class="item-benefits__title">г.Ижевск ул. Пушкинская 66</h3>
+                            </div>
+                        </div>
+                        <div class="benefits__column">
+                            <div class="benefits__item">
+                                <div class="item-benefits__img"><img src="img/icons/contacts3.svg" alt=""></div>
+                                <h3 class="item-benefits__title">Sladostisup@mail.ru</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </section> 
         </main>
-    </div>    
-        
-    
-    <!-- <footer class="footer">
-        <div class="footer2">
-        <h1 class="footer__title">Sladosti</h1>
-        </div>
-    </footer> -->
-    <!-- popup-menu -->
-    <div class="popup popup-main">
-        <div class="popup__wrapper">
-          <div class="popup__inner">
-            <div class="popup__content">
-              <button class="btn-close popup__btn-close"></button>
-              <h2 class="page-title popup__title">Заполните форму</h2>
-                <div class="form-main">
-                    <form class="form">
-                    <input type="hidden" name="пицца">
-                    <input type="hidden" name="цена">
-                    <input type="hidden" name="размер">
-                    <input class="form__input" type="text" name="имя" placeholder="Имя" required>
-                    <input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
-                    <input class="form__input" type="text" name="почта" placeholder="Почта" required>
-                    <input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
-        
-                    <button class="btn form__btn" type="submit">Отправить</button>
-                    </form>
-                </div>  
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- popup-menu -->
+        <!-- <footer class="footer">
+            <div class="fooret-inner _container">
+                    <div class="footer-column">
+                        <h3>Sladosti</h3>
+                        <p class="footer-company-name">prod. by Denis Sharipov</p>
+                    </div>
+                    <div class="footer-column">
+                        <p>Ижевск ул. Пушкинская 66</p>
+                        <p><a href="tel:+79501500505">+7(950)-150-05-05</a></p>
+                        <p> <a href="mailto:Sladostisup@mail.ru">Sladostisup@mail.ru</a></p>
+                    </div>
+                    <div class="footer-column">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a class="footer__link scrollto" href="#catalog">Каталог</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer__link scrollto" href="#feedback">Отзывы</a>                
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer__link scrollto" href="#contacts">Контакты</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer__link scrollto" href="#about">О нас</a> 
+                            </li>
+                        </ul>    
+                    </div>
+                </div>
+                </footer> -->
+                <footer class="footer-distributed">
+                    <div class="_container">
+                    <div class="footer-left">
+                        <h3>Sladosti<span>izhevsk</span></h3>
+                        <p class="footer-links">
+                            <a href="#main" class="link-1 scrollto">Главная</a>
+                            <a href="#catalog" class="scrollto">Каталог</a>
+                            <a href="#feedback" class="scrollto">Отзывы</a>
+                            <a href="#contacts" class="scrollto">Контакты</a>
+                            <a href="#about" class="scrollto">О нас</a>
+                        </p>
+                        <p class="footer-company-name">Company Name © 2015</p>
+                    </div>
+                    <div class="footer-center">
+                        <div class="footer-contacts">
+                            <i><img src="img/icons/contactwhite2.svg" alt=""></i> 
+                            <p><span>г.Ижевск</span>Пушкинская 66</p>
+                        </div>
+                        <div class="footer-contacts">
+                            <i><img src="img/icons/contactwhite1.svg" alt=""></i> 
+                            <p><a href="tel:+79501500505">+7(950)-150-05-05</a></p>
+                        </div>
+                        <div class="footer-contacts">
+                            <i><img src="img/icons/contactwhite3.svg" alt=""></i> 
+                            <p><a href="mailto:Sladostisup@mail.ru">Sladostisup@mail.ru</a></p>
+                        </div>
+                    </div>
 
+                    <div class="footer-right">
+                        <div class="footer-icons">
+                            <a href="http://vk.com" target="_blank"><i class="fa fa-vkontakte"><img src="img/icons/socials/vkontakte.svg" alt=""></i></a>
+                            <a href="http://instagram.com" target="_blank"><i class="fa fa-instagram"><img src="img/icons/socials/Instagram.svg" alt=""></i></a>
+                            <a href="http://viber.com" target="_blank"><i class="fa fa-twitter"><img src="img/icons/socials/viber.svg" alt=""></i></a>
+                            <a href="https://web-telegram.net/" target="_blank"><i class="fa fa-telegram"><img src="img/icons/socials/telegram.svg" alt=""></i></a>
+                            <a href="https://web-telegram.net/" target="_blank"><i class="fa fa-telegram"><img src="img/icons/socials/whatsapp.svg" alt=""></i></a>
+                        </div>
+
+                    </div>  
+                </div>
+                </footer>
+    </div>    
     <!-- popup-order -->
 <div class="popup popup-order">
     <div class="popup__wrapper">
@@ -521,20 +678,18 @@
           <h2 class="page-title popup__title">Заполните форму</h2>
           <p class="popup__subtitle popup__subtitle--order">Товар</p>
           <div class="order">
-            <img class="order__img" src="img/cake/2.jpg" alt="">
+            <img class="order__img" src="" alt="">
             <h3 class="order__title">
-              <span>Торт нежный</span>
-              <span>2150</span> &#8381;
+              <span class="order-product-title"></span><br />
+              <span class="order-product-price"></span> &#8381;
             </h3>
-            <form class="form">
-              <input type="hidden" name="пицца">
-              <input type="hidden" name="цена">
-              <input type="hidden" name="размер">
+            <form class="form form-send" autocomplete="off">
+              <input class="order-info-title" type="hidden" name="изделие">
+              <input class="order-info-price" type="hidden" name="цена">
               <input class="form__input" type="text" name="имя" placeholder="Имя" required>
               <input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
               <input class="form__input" type="text" name="почта" placeholder="Почта" required>
               <input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
-
               <button class="btn form__btn" type="submit">Отправить</button>
             </form>
           </div>
@@ -556,8 +711,10 @@
     </div>
   </div>
   <!--.popup-thanks -->
-    <script src="//js/mylib.js"></script>
-    <script src="//js/script.js"></script>
-    <script src="//js/popup.js"></script>
+  <script src="js/mylib.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/product.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>
