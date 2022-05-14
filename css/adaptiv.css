@@ -1,159 +1,214 @@
+  .popup {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    color: #0a1825;
+  }
+  
+  .popup.is-active {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .popup__wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .popup__inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 50px 0;
+  }
+  
+  .popup__content {
+    background: #fff1fe;
+    padding: 70px 20px;
+    max-width: 730px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 40px;
+  }
+  
+  .popup__content--fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .popup__content--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popup__btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .popup__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+  }
+  
+  .popup__subtitle {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  .popup__subtitle--main{
+    max-width: 360px;
+    margin: 0 auto 20px;
+  }
+  .popup__subtitle--order {
+    max-width: 360px;
+    margin: 0 auto 20px;
+  }
+  @media (max-width: 767px) {
+    .popup__inner {
+      padding: 0;
+    }
+  
+    .popup__content {
+      max-width: 100%;
+      height: 100%;
+      border-radius: 0;
+    }
+  
+    .popup__subtitle {
+      font-size: 18px;
+    }
+  
+    .popup__subtitle--order {
+      max-width: 260px;
+    }
+  }
 
+  @media (max-width: 425px){
+    .popup__title{
+      font-size: 25px;
+    }
+    .popup__subtitle{
+      font-size: 16px;
+    }
+  }
 
-@media (max-width: 1024px) {
-    .product{
-        width: 40%;
+  .btn-close {
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    transition: transform .2s, opacity .2s;
+  }
+  
+  .btn-close:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn-close:active {
+    transform: scale(.9);
+    opacity: .8;
+  }
+  
+  
+  
+  .btn-close::before,
+  .btn-close::after {
+    content: '';
+    background: #FF8308;
+    height: 40px;
+    width: 3px;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+  }
+  @media (max-width: 425px){
+      .btn-close::before,
+      .btn-close::after{
+      height: 25px;
     }
-}
-
-
-@media (max-width: 850px) {
-    .feddback__img{
-        width: 250px;
+    .btn-close{
+      width: 30px;
+      height: 30px;
     }
-    .feedback__item{
-        margin: 0;
-        padding: 10px 5%;
-    }
-}
-
-@media (max-width: 800px) {
-    .about__column{
-        flex: 0 1 50%;
-    }
-    .about__column:last-child{
-        flex: 0 1 100%;
-    }
-    .benefits__column{
-        flex: 0 1 50%;
-    }
-    .benefits__column:last-child{
-        flex: 0 1 100%;
-    }
-}
-
-@media (max-width: 750px) {
-    .feedback__name{
-        font-size: 20px;
-    }
-    .feedback__text{
-        font-size: 15px;
-    }
-}
-
-
-@media (max-width: 650px) {
-    .product{
-        width: 100%;
-        margin: 10px 20px;
-    }
-    .feddback__img{
-        width: 200px;
-    }
-    .feedback__name::after{
-        margin: 10px auto 30px;
-    }
-
-}
-
-@media(max-width: 620px) {
-    .item__about-text{
-        width: 90%;
+  }
+  
+  .btn-close::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  .btn-close::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  /* btn-close end */
+  /* order start */
+  .order {
+      max-width: 310px;
+      margin: 0 auto;
     }
     
-} 
+  .order__img {
+    width: 200px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 20px;
+  }
+  
+  .order__title {
+    margin: 0 0 5px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  /* order end */
+  /* form start */
 
-@media (max-width: 600px) {
-    .about__column{
-        flex: 0 1 100%;
-    }
-    .benefits__column{
-        flex: 0 1 100%;
-    }
-    .catalog-nav__btn{
-        font-size: 15px;
-        min-width: 100%;
-    }
-    .feedback__name::after{
-        margin: 10px auto 20px;
-    }   
-    .feedback__subtext{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .feddback__img{
-        margin: 0 auto;
-    }
-}
-
-@media(max-width: 480px) {
-    .about__intro-title{
-        font-size: 30px;
-    }
-    .item__about-text{
-        font-size: 15px;
-    }
-    .item__about-title{
-        font-size: 30px;
-    }
-    .main-block__text{
-        font-size: 16px;
-    }
-    .main-block__title{
-        font-size: 20px;
-    }
-    .main-block__body{
-        padding: 40% 0px 20% 0px;
-    }
-    .menu-link{
-        font-size: 15px;
-    }
-    .tabs>label {
-        font-size: 20px;
-    }
-}
-
-@media(max-width: 443px) {
-    .header-container{
-        flex-wrap:wrap;
-    }
-    .menu-list{
-        flex-wrap: nowrap;
-        justify-content: center;
-        flex: 0 1 25%;
-    }
-    .menu {
-        padding: 1% 0;
-    }
-    .logo{
-        padding-top: 10px;
-    }
-    .header{
-        background-color:rgba(42, 42, 42);
-    }
-    .header-container{
-        height: 80px;
-    }
-    .menu-link{
-        font-size: 14px;
-    }
-    
-    
-} 
-
-@media(max-width: 400px) {
-    .catalog-nav__item{
-        flex: 0 1 50%;
-        align-items: center;
-        justify-content: center;
-    }
-    .feedback__name{
-        font-size: 20px;
-    }
-    .feedback__text{
-        font-size: 15px;
-    }
-    .tabs>label {
-        font-size: 15px;
-    }
-}
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 15px 30px;
+    background: #fde1bb;
+    margin: 8px auto;
+    border: 2px solid transparent;
+    border-radius: 2em;
+    outline: none;
+    font-size: 20px;
+  }
+  
+  .form__input:focus {
+    border-color: #FF8308;
+  }
+  
+  .form__btn {  
+    width: 100%;
+    color: #efefef;
+    padding: 18px 30px;
+    background: #FF8308;
+    /* text-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    background: #ff50b6;
+    padding: 22px 28px;
+    border-radius: 50px; */
+  }
+  .form__btn:hover{
+    background: #d8720c;
+  }
+  /* form end */
